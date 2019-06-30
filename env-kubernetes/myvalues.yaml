@@ -12,7 +12,8 @@ controllerteam:
     repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go
 
 expose:
-  image: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+  image: 
+    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
     
 heapster:
   image:

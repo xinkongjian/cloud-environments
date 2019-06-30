@@ -11,12 +11,19 @@ controllerteam:
   image:
     repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go
 
+expose:
+  image: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+    
+heapster:
+  image:
+    repository: gcr.mirrors.ustc.edu.cn/google-containers/heapster
 
+nexus:
+  image:
+    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/nexus
+    
 jenkins:
-  Master:
-
   Agent:
-
     # Key Value selectors. Ex:
     # jenkins-agent: v1
     PodTemplates:

@@ -21,11 +21,15 @@ exposecontroller:
     
 heapster:
   image:
-    repository: gcr.mirrors.ustc.edu.cn/google-containers/heapster
+    repository: gcr.azk8s.cn/google_containers/heapster
+
+heapster-nanny:
+  image:
+    repository: gcr.azk8s.cn/google_containers/addon-resizer
 
 nexus:
   image:
-    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/nexus
+    repository: gcr.azk8s.cn/jenkinsxio/nexus
     
 jenkins:
   Agent:

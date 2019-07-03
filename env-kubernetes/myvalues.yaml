@@ -12,18 +12,18 @@ controllerteam:
     repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go
 
 expose:
-  image: 
-    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+  image: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+
 
 exposecontroller:
-  image:
-    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+  image: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+
     
 heapster:
   image:
     repository: gcr.azk8s.cn/google_containers/heapster
 
-heapster-nanny:
+resizer:
   image:
     repository: gcr.azk8s.cn/google_containers/addon-resizer
 

@@ -1,31 +1,32 @@
 # Override configuration from https://github.com/jenkins-x/jenkins-x-platform/blob/master/jenkins-x-platform/values.yaml
 gcpreviews:
   image:
-    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go
+    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 controllerbuild:
   image:
-    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go
+    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 controllerteam:
   image:
-    repository: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go
+    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 expose:
-  image: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+  image: 
+    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 
 exposecontroller:
-  image: gcr.mirrors.ustc.edu.cn/jenkinsxio/exposecontroller
+  image: 
+    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
     
 heapster:
   image:
     repository: gcr.azk8s.cn/google_containers/heapster
-
-resizer:
-  image:
-    repository: gcr.azk8s.cn/google_containers/addon-resizer
+  resizer:
+    image:
+      repository: gcr.azk8s.cn/google_containers/addon-resizer
 
 nexus:
   image:
@@ -39,81 +40,81 @@ jenkins:
       aws-cdk:
         Containers:
           aws-cdk:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-maven-nodejs:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-maven-nodejs:0.1.350
 
       Maven:
         Containers:
           Maven:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-maven:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-maven:0.1.350
 
       Maven-Java11:
         Containers:
           Maven:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-maven-java11:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-maven-java11:0.1.350
       Gradle:
         Containers:
           Gradle:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-gradle:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-gradle:0.1.350
       Scala:
         Containers:
           Scala:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-scala:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-scala:0.1.350
       Go:
         Containers:
           Go:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-go:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-go:0.1.350
       Terraform:
         Containers:
           Terraform:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-terraform:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-terraform:0.1.350
       Rust:
         Containers:
           Rust:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-rust:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-rust:0.1.350
       Newman:
         Containers:
           Newman:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-newman:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-newman:0.1.350
       Nodejs:
         Containers:
           Nodejs:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-nodejs:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-nodejs:0.1.350
       Maven-Nodejs:
         Containers:
           MavenNodejs:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-maven-nodejs:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-maven-nodejs:0.1.350
       JX-base:
         Containers:
           JX-base:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-jx:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-jx:0.1.350
       Promote:
         Containers:
           Promote:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-jx:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-jx:0.1.350
       Python2:
         Containers:
           Python:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-python2:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-python2:0.1.350
       Python:
         Containers:
           Python:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-python:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-python:0.1.350
       Python37:
         Containers:
           Python:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-python37:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-python37:0.1.350
       Ruby:
         Containers:
           Ruby:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-ruby:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-ruby:0.1.350
       Swift:
         Containers:
           Swift:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-swift:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-swift:0.1.350
       Dlang:
         Containers:
           Dlang:
-            Image: gcr.mirrors.ustc.edu.cn/jenkinsxio/builder-dlang:0.1.350
+            Image: gcr.azk8s.cn/jenkinsxio/builder-dlang:0.1.350
   Persistence:
     ## jenkins data Persistent Volume Storage Class
     ## If defined, storageClassName: <storageClass>

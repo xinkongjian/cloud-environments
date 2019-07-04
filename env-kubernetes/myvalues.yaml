@@ -12,13 +12,13 @@ controllerteam:
     repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 expose:
-  image: 
-    repository: gcr.azk8s.cn/jenkinsxio/builder-go
+  Image: gcr.azk8s.cn/jenkinsxio/exposecontroller
+#    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 
 exposecontroller:
-  image: 
-    repository: gcr.azk8s.cn/jenkinsxio/builder-go
+  Image: gcr.azk8s.cn/jenkinsxio/exposecontroller
+#    repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
     
 heapster:

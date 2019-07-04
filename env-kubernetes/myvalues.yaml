@@ -31,7 +31,12 @@ heapster:
 nexus:
   image:
     repository: gcr.azk8s.cn/jenkinsxio/nexus
-    
+
+Ingress:
+  enable: true
+  image:
+    repository: gcr.azk8s.cn/google_containers/defaultbackend
+      
 jenkins:
   Agent:
     # Key Value selectors. Ex:

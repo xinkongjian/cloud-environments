@@ -12,8 +12,7 @@ controllerteam:
     repository: gcr.azk8s.cn/jenkinsxio/builder-go
 
 expose:
-  image: 
-    repository: gcr.azk8s.cn/jenkinsxio/exposecontroller
+  Image: gcr.azk8s.cn/jenkinsxio/exposecontroller
 
 
 exposecontroller:

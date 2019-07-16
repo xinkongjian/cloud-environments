@@ -10,7 +10,20 @@ controllerbuild:
 controllerteam:
   image:
     repository: gcr.azk8s.cn/jenkinsxio/builder-go
+    
+controllerrole:
+  image:
+    repository: gcr.azk8s.cn/jenkinsxio/builder-jx
 
+gcactivities:
+  image:
+    repository: gcr.azk8s.cn/jenkinsxio/builder-jx
+
+gcpods:
+  image:
+    repository: gcr.azk8s.cn/jenkinsxio/builder-jx
+    
+    
 expose:
   Image: gcr.azk8s.cn/jenkinsxio/exposecontroller
 

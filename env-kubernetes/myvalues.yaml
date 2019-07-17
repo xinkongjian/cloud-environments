@@ -45,9 +45,7 @@ heapster:
     image:
       repository: gcr.azk8s.cn/google_containers/addon-resizer
 
-nexus:
-  image:
-    repository: gcr.azk8s.cn/jenkinsxio/nexus
+
 
 Ingress:
   enable: true
@@ -168,6 +166,8 @@ chartmuseum:
       fabric8.io/exposeUrl: "http://chartmuseum.jx.xinkongjian.tech:8080"
 nexus:
   enabled: true
+  image:
+    repository: gcr.azk8s.cn/jenkinsxio/nexus
   service:
     annotations:
       fabric8.io/exposeUrl: "http://nexus.jx.xinkongjian.tech:8080"

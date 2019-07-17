@@ -1,28 +1,33 @@
 # Override configuration from https://github.com/jenkins-x/jenkins-x-platform/blob/master/jenkins-x-platform/values.yaml
 gcpreviews:
   image:
-    repository: gcr.azk8s.cn/jenkinsxio/builder-go
-
+    repository: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-go
+    tag: 0.1.572
+    
 controllerbuild:
   image:
-    repository: gcr.azk8s.cn/jenkinsxio/builder-go
-
+    repository: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-go
+    tag: 0.1.572
+    
 controllerteam:
   image:
-    repository: gcr.azk8s.cn/jenkinsxio/builder-go
+    repository: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-go
+    tag: 0.1.572
     
 controllerrole:
   image:
-    repository: gcr.azk8s.cn/jenkinsxio/builder-jx
-
+    repository: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-jx
+    tag: 0.1.572
+    
 gcactivities:
   image:
-    repository: gcr.azk8s.cn/jenkinsxio/builder-jx
-
+    repository: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-jx
+    tag: 0.1.572
+    
 gcpods:
   image:
-    repository: gcr.azk8s.cn/jenkinsxio/builder-jx
-    
+    repository: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-jx
+    tag: 0.1.572    
     
 expose:
   Image: gcr.azk8s.cn/jenkinsxio/exposecontroller
@@ -62,7 +67,7 @@ jenkins:
       Maven:
         Containers:
           Maven:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-maven:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-maven:0.1.572
 
       Maven-Java11:
         Containers:
@@ -71,23 +76,23 @@ jenkins:
       Gradle:
         Containers:
           Gradle:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-gradle:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-gradle:0.1.572
       Scala:
         Containers:
           Scala:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-scala:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-scala:0.1.572
       Go:
         Containers:
           Go:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-go:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-go:0.1.572
       Terraform:
         Containers:
           Terraform:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-terraform:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-terraform:0.1.572
       Rust:
         Containers:
           Rust:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-rust:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-rust:0.1.572
       Newman:
         Containers:
           Newman:
@@ -95,7 +100,7 @@ jenkins:
       Nodejs:
         Containers:
           Nodejs:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-nodejs:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-nodejs:0.1.572
       Maven-Nodejs:
         Containers:
           MavenNodejs:
@@ -103,19 +108,19 @@ jenkins:
       JX-base:
         Containers:
           JX-base:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-jx:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-jx:0.1.572
       Promote:
         Containers:
           Promote:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-jx:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-jx:0.1.572
       Python2:
         Containers:
           Python:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-python2:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-python2:0.1.572
       Python:
         Containers:
           Python:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-python:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-python:0.1.572
       Python37:
         Containers:
           Python:
@@ -123,11 +128,11 @@ jenkins:
       Ruby:
         Containers:
           Ruby:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-ruby:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-ruby:0.1.572
       Swift:
         Containers:
           Swift:
-            Image: gcr.azk8s.cn/jenkinsxio/builder-swift:0.1.350
+            Image: registry.cn-shenzhen.aliyuncs.com/xkj-jx/builder-swift:0.1.572
       Dlang:
         Containers:
           Dlang:
